@@ -1,0 +1,9 @@
+.img{
+    background-image: url(../../assets/bg/ai.png);
+    background-size: cover;
+    background-position: center bottom;
+    -webkit-mask-image: url(../../assets/bg/black-42387_1280.webp);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 90%;
+    -webkit-mask-position: bottom;
+}
