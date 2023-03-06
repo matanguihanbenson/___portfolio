@@ -7,11 +7,12 @@
     src: url(../../assets/fonts/DarlingtonDemo-z8xjG.ttf);
 }
 @font-face {
-    font-family: bettergrade;
+    font-family: BetterGrade-519DV;
     src: url(../../assets/fonts/BetterGrade-519DV.ttf);
 }
+
 .brand{
-    font-family: bettergrade;
+    font-family: BetterGrade-519DV;
     font-weight: ;
 }
 .img{
