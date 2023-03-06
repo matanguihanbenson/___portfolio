@@ -977,6 +977,10 @@ video {
     width: 66.666667%;
   }
 
+  .lg\:w-44 {
+    width: 11rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -991,6 +995,11 @@ video {
 
   .lg\:p-10 {
     padding: 2.5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:text-6xl {
