@@ -722,6 +722,18 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-tl {
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
 .from-pink-400 {
   --tw-gradient-from: #f472b6;
   --tw-gradient-to: rgb(244 114 182 / 0);
@@ -731,6 +743,18 @@ video {
 .from-pink-200 {
   --tw-gradient-from: #fbcfe8;
   --tw-gradient-to: rgb(251 207 232 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pink-100 {
+  --tw-gradient-from: #fce7f3;
+  --tw-gradient-to: rgb(252 231 243 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pink-50 {
+  --tw-gradient-from: #fdf2f8;
+  --tw-gradient-to: rgb(253 242 248 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -747,6 +771,11 @@ video {
 .via-pink-400 {
   --tw-gradient-to: rgb(244 114 182 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #f472b6, var(--tw-gradient-to);
+}
+
+.via-pink-100 {
+  --tw-gradient-to: rgb(252 231 243 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #fce7f3, var(--tw-gradient-to);
 }
 
 .to-pink-200 {
@@ -791,6 +820,31 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 @media (min-width: 640px) {

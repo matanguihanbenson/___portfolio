@@ -1,3 +1,19 @@
+@font-face {
+    font-family: sellena;
+    src: url(../../assets/fonts/SellenaBrush-x3JyK.ttf);
+}
+@font-face {
+    font-family: darlington;
+    src: url(../../assets/fonts/DarlingtonDemo-z8xjG.ttf);
+}
+@font-face {
+    font-family: bettergrade;
+    src: url(../../assets/fonts/BetterGrade-519DV.ttf);
+}
+.brand{
+    font-family: bettergrade;
+    font-weight: ;
+}
 .img{
     background-image: url(../../assets/bg/ai.png);
     background-size: cover;
