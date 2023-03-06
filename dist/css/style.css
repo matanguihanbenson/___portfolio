@@ -13,7 +13,6 @@
 
 .brand{
     font-family: BetterGrade-519DV;
-    font-weight: ;
 }
 
 .intro h3, .intro h1{
@@ -32,8 +31,6 @@
             mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
             mask-size: 100% 100%;
-    -webkit-mask-position: bottom;
-            mask-position: bottom;
     
     
 }
