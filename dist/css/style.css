@@ -15,6 +15,13 @@
     font-family: BetterGrade-519DV;
     font-weight: ;
 }
+
+.intro h3, .intro h1{
+    font-family: poppins;
+}
+.intro h1{
+    font-weight: 700;
+}
 .img{
     background-image: url(../../assets/bg/ai.png);
     background-size: cover;
