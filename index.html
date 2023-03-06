@@ -9,23 +9,18 @@
     <link rel="stylesheet" href="./dist/css/style.css">
     <script src="https://kit.fontawesome.com/3118edf327.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="container  h-screen w-screen relative">
-        <header class="flex justify-between h-20 lg:px-10 px-5 items-center relative z-50">
-            <a href="#" class="brand">Mark.Up</a>
-    
-            <button><i class="fa-solid fa-align-center"></i></button>
-    
-        </header> 
+<body class="">
+    <header class="flex justify-between lg:absolute absolute w-full z-20 p-5 md:portrait:hidden">
+        <a href="#">Mark.Up</a>
+        <button><i class="fa-solid fa-align-center"></i></button>
+    </header>
+    <div class="bg-fuchsia-300 w-full h-screen p-5 relative z-0 md:portrait:h-1/2">
         
-        <div class="lg:h-full h-3/4 w-full lg:absolute flex top-0 z-10 lg:px-10 px-5">
-            <!-- <div class="h-full w-1/2 lg:flex lg:items-center hidden lg:visible">
-                <div>
-                    <h3>Hello there,</h3>
-                    <h1>I'm Benson</h1>
-                </div>
-            </div> -->
-            <div class="h-11/12 w-full lg:w-1/2 img"></div>
+        <div class="flex h-full w-full md:flex-row flex-col lg:flex-row">
+            <div class=" w-full h-1/5 lg:h-full"></div>
+            <div class="w-full h-full flex items-center justify-center">
+                <div class="img lg:w-4/6 lg:h-5/6 h-96 w-96"></div>
+            </div>
         </div>
     </div>
 
