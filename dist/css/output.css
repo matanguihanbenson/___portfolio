@@ -635,6 +635,10 @@ video {
   height: auto;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-44 {
   width: 11rem;
 }
@@ -666,6 +670,10 @@ video {
 
 .w-2\/5 {
   width: 40%;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .flex-col {

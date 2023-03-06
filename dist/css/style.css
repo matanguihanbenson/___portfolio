@@ -11,7 +11,7 @@
     src: url(../../assets/fonts/BetterGrade-519DV.ttf);
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .brand{
     font-family: BetterGrade-519DV;
@@ -22,12 +22,6 @@ body{
 }
 .intro h1{
     font-weight: 700;
-}
-.changeBg{
-    background: rgba(0,0,0,1);
-    transition: ease-in-out;
-    transition-duration: 300ms;
-    filter: opacity(.2);
 }
 
 .img{
@@ -42,14 +36,4 @@ body{
             mask-size: 100% 100%;
     
     
-}
-
-.showMenu{
-    transition: all;
-    transition-duration: 300ms;
-    right: -100%;
-    position: relative;
-}
-.show-menu{
-    right: 0;
 }

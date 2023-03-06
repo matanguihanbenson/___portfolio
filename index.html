@@ -11,26 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="preload" href="./assets/fonts/BetterGrade-519DV.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="./assets/fonts/BetterGrade-519DV.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 <body class="">
     <header class="flex justify-between lg:absolute absolute w-full z-30 p-5 lg:p-10 md:portrait:hidden items-start">
         <a href="#" class="brand lg:text-6xl text-4xl">Mark.Up</a>
-        <button id="btn" class="text-xl z-50"><i class="fa-solid fa-align-center"></i></button>
+        <button class="text-xl z-50"><i class="fa-solid fa-align-center"></i></button>
         
     </header>
-    <div id="navMenu" class="h-full w-2/5 z-20 absolute right-0">
-        <div id="menu" class="w-full h-full bg-slate-100 shadow-2xl">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-    </div>
+    
     <!-- xl lg md -->
 
-    <div id="banner" class="hidden md:block lg:block xl:block">
+    <div class="hidden md:block lg:block xl:block">
         <div class=" w-full h-screen p-5 relative z-0 md:portrait:h-1/2 lg:p-10">
         
             <div class="flex h-full w-full md:flex-row flex-col lg:flex-row">
@@ -59,7 +51,10 @@
             </div>
         </div>
         <div class="h-screen w-full bg-slate-600">
+            
         </div>
+
+
     </div>
 
     <!-- end xl lg md -->
@@ -68,18 +63,6 @@
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        var btn = document.getElementById("btn");
-        var menu = document.getElementById("navMenu");
-
-        $("#btn").click(function(){
-            $("#menu").toggleClass('show-menu');
-            $("#banner").toggleClass('changeBg');
-        });
-
-    </script>
-
+    
 </body>
 </html>
