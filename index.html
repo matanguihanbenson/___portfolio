@@ -14,14 +14,23 @@
     <link rel="preload" href="./assets/fonts/BetterGrade-519DV.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 <body class="">
-    <header class="flex justify-between lg:absolute absolute w-full z-20 p-5 lg:p-10 md:portrait:hidden items-start">
+    <header class="flex justify-between lg:absolute absolute w-full z-30 p-5 lg:p-10 md:portrait:hidden items-start">
         <a href="#" class="brand lg:text-6xl text-4xl">Mark.Up</a>
-        <button class="text-xl"><i class="fa-solid fa-align-center"></i></button>
+        <button id="btn" class="text-xl z-50"><i class="fa-solid fa-align-center"></i></button>
+        
     </header>
-
+    <div id="navMenu" class="h-full w-2/5 z-20 absolute right-0">
+        <div id="menu" class="w-full h-full bg-slate-100 shadow-2xl">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
     <!-- xl lg md -->
 
-    <div class="hidden md:block lg:block xl:block">
+    <div id="banner" class="hidden md:block lg:block xl:block">
         <div class=" w-full h-screen p-5 relative z-0 md:portrait:h-1/2 lg:p-10">
         
             <div class="flex h-full w-full md:flex-row flex-col lg:flex-row">
@@ -55,11 +64,22 @@
 
     <!-- end xl lg md -->
 
-    <div class="bg-slate-500 h-screen w-full">
+    <div class="bg-white-screen w-full">
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        var btn = document.getElementById("btn");
+        var menu = document.getElementById("navMenu");
+
+        $("#btn").click(function(){
+            $("#menu").toggleClass('show-menu');
+            $("#banner").toggleClass('changeBg');
+        });
+
+    </script>
 
 </body>
 </html>
