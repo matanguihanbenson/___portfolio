@@ -8,65 +8,19 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://kit.fontawesome.com/3118edf327.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-slate-100 text-gray-700">
-  <div class="p-2">
-    <div class="h-full">
-      <div>Logo</div>
-    </div>
-    <div class="h-max w-full mt-4">
-      <div class="h-10 relative">
-        <span class="flex absolute h-full items-center justify-center float-left">
-          <img class="h-10 w-8 scale-125" src="assets/img/sparkle3.gif" alt="">
-        </span>
-        <h1 class="font-bold text-xl indent-1 leading-10 font-serif text-gray-700">Featured Projects</h1>
-        <div class="prev-slide">
-            <i class="fa fa-chevron-left"></i>
-          </div>
-          <div class="next-slide">
-            <i class="fa fa-chevron-right"></i>
-          </div>
-    </div>
-
-      <div class="my-carousel swiper-container overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide h-[300px] md:!h-[500px]" style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)), url(assets/img/f-1.png);background-size: 100% 100%;">
-            <div class="w-full h-32 absolute bottom-0 p-3">
-              <h1 class="font-bold text-3xl text-white">Food Delivery App</h1>
-
-            </div>
-          </div>
-          <div class="swiper-slide md:!h-[500px]"></div>
-          <div class="swiper-slide md:!h-[500px]"></div>
-          <div class="swiper-slide md:!h-[500px]"></div>
-          <div class="swiper-slide md:!h-[500px]"></div>
-        </div>
-        <br>
-      </div>
+<body class="text-gray-700">
+  <div class="flex justify-between w-full px-6 py-10 h-14 items-center fixed top-0 bg-white">
+    <h1 class="logo text-xl leading-6">Mark.Up</h1>
+    <div class="rounded-full h-10 w-10 bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center">
+      <i class="fa fa-bars text-xl text-black"></i>
     </div>
   </div>
-
-  <div>
-    <h1 class="text-[500%] md:text-[1000%] text-center font-black text-gray-950">DRAFT</h1>
+  <br>
+  <div class="p-6 h-max mt-20 w-full flex flex-col items-center">
+    <div class="profile h-40 w-40"></div>
+    <div class="mt-2">
+        <h1 class="font-sans inline-block">Mark Benson Matanguihan</h1>
+    </div>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.my-carousel', {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-
-    document.querySelector('.prev-slide').addEventListener('click', function() {
-      swiper.slidePrev();
-    });
-
-    // Next slide click event
-    document.querySelector('.next-slide').addEventListener('click', function() {
-      swiper.slideNext();
-    });
-  </script>
 </body>
 </html>
