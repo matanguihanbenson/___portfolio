@@ -644,6 +644,10 @@ video {
   padding: 0.75rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .indent-1 {
   text-indent: 0.25rem;
 }
@@ -662,8 +666,24 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[200\%\] {
+  font-size: 200%;
+}
+
+.text-\[500\%\] {
+  font-size: 500%;
+}
+
+.text-\[1000\%\] {
+  font-size: 1000%;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .leading-10 {
@@ -678,6 +698,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black\/50 {
+  color: rgb(0 0 0 / 0.5);
+}
+
+.text-gray-950 {
+  --tw-text-opacity: 1;
+  color: rgb(3 7 18 / var(--tw-text-opacity));
 }
 
 .swiper-slide {
@@ -726,6 +755,10 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:text-\[1000\%\] {
+    font-size: 1000%;
   }
 }
 
