@@ -11,14 +11,21 @@
 <body class="text-gray-700">
   <div class="flex justify-between w-full px-6 py-10 h-14 items-center fixed top-0 bg-white">
     <h1 class="logo text-xl leading-6">Mark.Up</h1>
-    <div class="rounded-full h-10 w-10 bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center">
+    <div class="md:hidden rounded-full h-10 w-10 bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center">
       <i class="fa fa-bars text-xl text-black"></i>
     </div>
+    <nav class="cl-effect-12 hidden md:block">
+      <a href="#">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+    </nav>
   </div>
   <br>
   <div class="p-6 h-max mt-20 w-full flex flex-col items-center">
-    <div class="profile h-40 w-40"></div>
-    <div class="mt-2">
+    <div class="profile h-40 w-40 md:hidden"></div>
+    <div class="mt-2 md:hidden">
         <h1 class="font-sans inline-block">Mark Benson Matanguihan</h1>
     </div>
   </div>

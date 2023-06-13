@@ -530,12 +530,12 @@ video {
   top: 0px;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .inline-block {
@@ -546,20 +546,16 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
 
 .h-14 {
   height: 3.5rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-48 {
-  height: 12rem;
 }
 
 .h-40 {
@@ -575,16 +571,12 @@ video {
   width: 2.5rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .cursor-pointer {
@@ -628,14 +620,6 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.font-\[\] {
-  font-family: ;
-}
-
-.font-\[kind-regards\] {
-  font-family: kind-regards;
 }
 
 .font-sans {
@@ -695,8 +679,67 @@ h1.logo{
   border-radius: 50%;
 }
 
+.cl-effect-12 a::before,
+.cl-effect-12 a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(102, 212, 255, 0.4);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  transition: transform 0.2s, opacity 0.2s;
+  transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.cl-effect-12 a::after {
+  width: 30px;
+  height: 30px;
+  border-width: 6px;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 15px;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #000;
+  font-size: 1em;
+}
+
+nav a:hover,
+  nav a:focus {
+  outline: none;
+}
+
+.cl-effect-12 a:hover::before,
+.cl-effect-12 a:hover::after,
+.cl-effect-12 a:focus::before,
+.cl-effect-12 a:focus::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
