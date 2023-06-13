@@ -526,12 +526,16 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .top-0 {
   top: 0px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.z-10 {
+  z-index: 10;
 }
 
 .mt-20 {
@@ -558,21 +562,25 @@ video {
   height: 3.5rem;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-10 {
   width: 2.5rem;
 }
 
-.w-40 {
-  width: 10rem;
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-\[27ch\] {
+  width: 27ch;
 }
 
 .w-full {
@@ -581,10 +589,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .items-center {
@@ -601,6 +605,15 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -622,13 +635,22 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-\[kind-regards\] {
+  font-family: kind-regards;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-6 {
@@ -640,9 +662,34 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-gray-700 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -686,7 +733,7 @@ h1.logo{
   left: 50%;
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(102, 212, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   content: '';
   opacity: 0;
@@ -727,6 +774,14 @@ nav a:hover,
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
+.banner{
+  background: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.7)), url(../assets/img/photo-1619410283995-43d9134e7656.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering:optimizeSpeed;
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -741,5 +796,19 @@ nav a:hover,
   .md\:hidden {
     display: none;
   }
-}
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}   

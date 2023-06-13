@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://kit.fontawesome.com/3118edf327.js" crossorigin="anonymous"></script>
 </head>
-<body class="text-gray-700">
-  <div class="flex justify-between w-full px-6 py-10 h-14 items-center fixed top-0 bg-white">
-    <h1 class="logo text-xl leading-6">Mark.Up</h1>
-    <div class="md:hidden rounded-full h-10 w-10 bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center">
+<body>
+  <div class="flex justify-between w-full px-6 py-10 h-14 items-center fixed top-0 z-10 bg-transparent">
+    <h1 class="logo text-xl leading-6 text-white md:text-2xl">Mark.Up</h1>
+    <div class="rounded-full h-10 w-10 md:hidden bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center">
       <i class="fa fa-bars text-xl text-black"></i>
     </div>
-    <nav class="cl-effect-12 hidden md:block">
+    <nav class="cl-effect-12 hidden md:text-white md:block">
       <a href="#">Home</a>
       <a href="#">Portfolio</a>
       <a href="#">About</a>
@@ -22,11 +22,10 @@
       <a href="#">Blog</a>
     </nav>
   </div>
-  <br>
-  <div class="p-6 h-max mt-20 w-full flex flex-col items-center">
-    <div class="profile h-40 w-40 md:hidden"></div>
-    <div class="mt-2 md:hidden">
-        <h1 class="font-sans inline-block">Mark Benson Matanguihan</h1>
+  
+  <div class="banner p-6 absolute bg-slate-950 w-full h-screen top-0 flex items-center">
+    <div class="w-10/12 mt-20 h-max ">
+      <h1 class="w-[27ch] text-white md:text-6xl text-xl font-bold">Building <span class="font-[kind-regards] text-yellow-500 inline-block">Digital Experiences</span>, One Line of Code at a Time</h1>
     </div>
   </div>
 </body>
