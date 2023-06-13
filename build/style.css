@@ -639,11 +639,6 @@ video {
   font-family: kind-regards;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -667,29 +662,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-yellow-300 {
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity));
-}
-
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -733,7 +708,7 @@ h1.logo{
   left: 50%;
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(238, 255, 0, 0.4);
   border-radius: 50%;
   content: '';
   opacity: 0;
@@ -775,7 +750,7 @@ nav a:hover,
 }
 
 .banner{
-  background: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.7)), url(../assets/img/photo-1619410283995-43d9134e7656.jpg);
+  background: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.7)), url(../assets/img/photo-1670057046254-3b5095eb4b66.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -788,6 +763,13 @@ nav a:hover,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 640px) {
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -797,13 +779,18 @@ nav a:hover,
     display: none;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .md\:text-6xl {
-    font-size: 3.75rem;
+  .md\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
