@@ -1003,6 +1003,10 @@ nav a:focus {
     display: none;
   }
 
+  .md\:w-\[28\%\] {
+    width: 28%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
