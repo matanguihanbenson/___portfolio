@@ -855,27 +855,16 @@ h1.logo {
           mask:url(../assets/img/colorful-paint-splash-free-png.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   -webkit-mask-position: center center;
           mask-position: center center;
   filter: grayscale(200%);
-  animation: mask;
+  animation: welcome;
+  animation-duration: 1s;
+  animation-delay: 1s;
   opacity: 0;
-  animation-duration: .3s;
-  animation-delay: .5s;
   animation-fill-mode: forwards;
-}
-
-@keyframes mask {
-  from{
-    -webkit-mask-size: 0% 0%;
-            mask-size: 0% 0%;
-  }
-
-  to{
-    -webkit-mask-size: 55% 100%;
-            mask-size: 55% 100%;
-    opacity: 1;
-  }
 }
 
 @keyframes welcome {
