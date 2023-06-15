@@ -671,6 +671,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -893,6 +897,7 @@ nav a:focus {
 
 .bg-white-scroll {
   background-color: rgb(53, 53, 53);
+  z-index: 99;
 }
 
 .bg-white-scroll h1,
@@ -1021,10 +1026,6 @@ nav a:focus {
     display: none;
   }
 
-  .md\:h-\[500px\] {
-    height: 500px;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1050,19 +1051,9 @@ nav a:focus {
     text-align: left;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-gray-900 {
@@ -1088,17 +1079,19 @@ nav a:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:flex-row {
-    flex-direction: row;
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
+}
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+@media (orientation: portrait) {
+  .portrait\:h-\[500px\] {
+    height: 500px;
   }
 }

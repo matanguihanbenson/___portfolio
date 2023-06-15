@@ -36,85 +36,84 @@
     </div>
   </nav>
   
-  <div class="banner p-6 relative w-full h-screen top-0 flex md:items-center">
-    <div class="w-full mt-20 h-max flex flex-col-reverse md:flex-row lg:grid-cols-2 items-center justify-between">
-      <div class="mt-10 text-center md:text-left">
-        <h1 class="text-2xl mb-2 lg:text-5xl">I'm Mark Benson</h1>
-        <h2 class="w-[27ch] text-gray-900 lg:text-3xl sm:text-2xl text-md font-bold leading-[150%] p-0 m-0">Building <span class="text-yellow-500 inline-block leading-[150%]">Digital Experiences</span>, <br>One Line of Code at a Time</h2>
-      </div>
-      <div class="profile h-[300px] sm:h-[300px] lg:h-[500px] w-full">
-
-      </div>
-    </div>
-  </div>
-
-  <div class="featured-section h-max p-6 w-full bg-white flex justify-between flex-col sm:flex-row">
-    <div class="sm:w-[70%] w-full">
-      <h1 class="text-2xl font-bold">Featured</h1>
-      <div class="my-carousel swiper-container mt-2 overflow-hidden lg:hidden relative">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1658204212985-e0126040f88f.jpg);background-repeat: no-repeat;background-size: cover;">
-            <div class="flex flex-col h-full w-full p-6">
-              <h1 class="text-xl font-bold text-white">Figma Designs</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
-            </div>
-          </div>
-          <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1467232004584-a241de8bcf5d.jpg);background-repeat: no-repeat;background-size: cover;">
-            <div class="flex flex-col h-full w-full p-6">
-              <h1 class="text-xl font-bold text-white">Web Designs</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
-            </div>
-          </div>
-          <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1555949963-ff9fe0c870eb.jpg);background-repeat: no-repeat;background-size: cover;">
-            <div class="flex flex-col h-full w-full p-6">
-              <h1 class="text-xl font-bold text-white">Other Projects</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
-            </div>
-          </div>
+  <div class="flex flex-col h-max justify-between gap-20">
+    <div class="banner p-6 relative w-full h-screen top-0 flex md:items-center portrait:h-[500px]">
+      <div class="w-full mt-20 h-max flex flex-col-reverse md:flex-row lg:grid-cols-2 items-center justify-between">
+        <div class="mt-10 text-center md:text-left">
+          <h1 class="text-2xl mb-2 lg:text-5xl">I'm Mark Benson</h1>
+          <h2 class="w-[27ch] text-gray-900 lg:text-3xl sm:text-2xl text-md font-bold leading-[150%] p-0 m-0">Building <span class="text-yellow-500 inline-block leading-[150%]">Digital Experiences</span>, <br>One Line of Code at a Time</h2>
         </div>
-        <div class="swiper-pagination absolute bottom-2 text-red-500 z-1"></div>
-      </div>
-      <div class="hidden lg:block mt-2">
-        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
-          <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1658204212985-e0126040f88f.jpg);background-repeat: no-repeat;background-size: cover;">
-            <div class="flex flex-col h-full w-full p-6">
-              <h1 class="text-xl font-bold text-white">Figma Designs</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
-            </div>
-          </div>
-          <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1467232004584-a241de8bcf5d.jpg);background-repeat: no-repeat;background-size: cover;">
-            <div class="flex flex-col h-full w-full p-6">
-              <h1 class="text-xl font-bold text-white">Web Designs</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
-            </div>
-          </div>
-          <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1555949963-ff9fe0c870eb.jpg);background-repeat: no-repeat;background-size: cover;">
-            <div class="flex flex-col h-full w-full p-6">
-              <h1 class="text-xl font-bold text-white">Other Projects</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
-            </div>
-          </div>
+        <div class="profile h-[300px] sm:h-[300px] lg:h-[500px] w-full">
         </div>
       </div>
     </div>
-    <div class="mt-4 sm:w-[28%] sm:mt-0">
-      <h1 class="text-2xl font-bold">Ongoing</h1>
-      <div class="h-[200px] mt-2 w-full bg-gray-200 rounded-lg">
-        <div class="w-full h-full flex flex-col items-center justify-center">
-          <i class="fa fa-clock text-5xl text-gray-600"></i>
-          <h1 class="text-gray-600 mt-1">No ongoing projects.</h1>
+    <div class="featured-section relative h-max p-6 w-full bg-white flex justify-between flex-col sm:flex-row">
+      <div class="sm:w-[70%] w-full">
+        <h1 class="text-2xl font-bold">Featured</h1>
+        <div class="my-carousel swiper-container mt-2 overflow-hidden lg:hidden relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1658204212985-e0126040f88f.jpg);background-repeat: no-repeat;background-size: cover;">
+              <div class="flex flex-col h-full w-full p-6">
+                <h1 class="text-xl font-bold text-white">Figma Designs</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1467232004584-a241de8bcf5d.jpg);background-repeat: no-repeat;background-size: cover;">
+              <div class="flex flex-col h-full w-full p-6">
+                <h1 class="text-xl font-bold text-white">Web Designs</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1555949963-ff9fe0c870eb.jpg);background-repeat: no-repeat;background-size: cover;">
+              <div class="flex flex-col h-full w-full p-6">
+                <h1 class="text-xl font-bold text-white">Other Projects</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination absolute bottom-2 text-red-500 z-1"></div>
         </div>
-        
+        <div class="hidden lg:block mt-2">
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+            <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1658204212985-e0126040f88f.jpg);background-repeat: no-repeat;background-size: cover;">
+              <div class="flex flex-col h-full w-full p-6">
+                <h1 class="text-xl font-bold text-white">Figma Designs</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1467232004584-a241de8bcf5d.jpg);background-repeat: no-repeat;background-size: cover;">
+              <div class="flex flex-col h-full w-full p-6">
+                <h1 class="text-xl font-bold text-white">Web Designs</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-red-500 rounded-lg" style="background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.3)), url(assets/img/photo-1555949963-ff9fe0c870eb.jpg);background-repeat: no-repeat;background-size: cover;">
+              <div class="flex flex-col h-full w-full p-6">
+                <h1 class="text-xl font-bold text-white">Other Projects</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 sm:w-[28%] sm:mt-0">
+        <h1 class="text-2xl font-bold">Ongoing</h1>
+        <div class="h-[200px] mt-2 w-full bg-gray-200 rounded-lg">
+          <div class="w-full h-full flex flex-col items-center justify-center">
+            <i class="fa fa-clock text-5xl text-gray-600"></i>
+            <h1 class="text-gray-600 mt-1">No ongoing projects.</h1>
+          </div>
+    
+        </div>
       </div>
     </div>
-  </div>
-  <div class="bg-yellow-500 h-[300px] w-full p-6 sm:flex items-center mt-4">
-    <div class="w-full">
-      <h1 class="font-black text-gray-900 sm:text-6xl sm:block hidden">crafting <br>beautiful <br> websites</h1>
-      <h1 class="font-black text-gray-900 sm:hidden text-xl text-center">crafting beautiful websites</h1>
-    </div>
-    <div>
-
+    <div class="bg-yellow-500 h-[300px] w-full p-6 sm:flex items-center mt-4">
+      <div class="w-full">
+        <h1 class="font-black text-gray-900 sm:text-6xl sm:block hidden">crafting <br>beautiful <br> websites</h1>
+        <h1 class="font-black text-gray-900 sm:hidden text-xl text-center">crafting beautiful websites</h1>
+      </div>
+      <div>
+      </div>
     </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
