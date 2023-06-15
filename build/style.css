@@ -554,8 +554,20 @@ video {
   z-index: 10;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -623,10 +635,6 @@ video {
   width: 2.5rem;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-\[27ch\] {
   width: 27ch;
 }
@@ -645,6 +653,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -695,6 +707,10 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -713,8 +729,8 @@ video {
   text-align: center;
 }
 
-.font-\[kind-regards\] {
-  font-family: kind-regards;
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -744,8 +760,8 @@ video {
   line-height: 1.5rem;
 }
 
-.leading-\[200\%\] {
-  line-height: 200%;
+.leading-\[150\%\] {
+  line-height: 150%;
 }
 
 .text-black {
@@ -797,12 +813,28 @@ video {
 @font-face {
   font-family: "kind-regards";
 
-  src: url(../assets/fonts/Pink\ Apple23.otf);
+  src: url(../assets/fonts/Stay\ Dreaming.otf);
 }
 
 h1.logo {
   font-family: "kind-regards";
   font-weight: bold;
+}
+
+.profile{
+  background:url(../assets/img/274143107_145922847876618_2535205908178722383_n.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-mask:url(../assets/img/colorful-paint-splash-free-png.png);
+          mask:url(../assets/img/colorful-paint-splash-free-png.png);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  filter: grayscale(200%);
 }
 
 .cl-effect-12 a::before,
@@ -836,7 +868,6 @@ nav a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
-  text-shadow: 0 0 1px #000;
   font-size: 1em;
 }
 
@@ -954,6 +985,10 @@ nav a:focus {
     display: none;
   }
 
+  .sm\:h-\[300px\] {
+    height: 300px;
+  }
+
   .sm\:w-\[28\%\] {
     width: 28%;
   }
@@ -966,9 +1001,9 @@ nav a:focus {
     flex-direction: row;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-6xl {
@@ -986,8 +1021,20 @@ nav a:focus {
     display: none;
   }
 
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:gap-4 {
@@ -999,9 +1046,18 @@ nav a:focus {
     padding-bottom: 3rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-5xl {
@@ -1022,5 +1078,27 @@ nav a:focus {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

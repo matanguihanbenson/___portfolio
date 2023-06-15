@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://kit.fontawesome.com/3118edf327.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="font-serif">
   <div class="nav fixed top-0 z-10 bg-transparent flex justify-between w-full px-6 py-10 md:py-12 h-14 items-center">
-    <h1 class="logo text-xl leading-6 text-gray-900 md:text-2xl">Mark.Up</h1>
+    <h1 class="logo text-2xl leading-6 text-gray-900 md:text-4xl">Mark.Up</h1>
     <div class="rounded-full h-10 w-10 md:hidden bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center" id="menuButton">
       <i class="fa fa-bars text-xl text-black"></i>
     </div>
@@ -36,13 +36,19 @@
     </div>
   </nav>
   
-  <div class="banner p-6 relative w-full h-screen top-0 flex items-center">
-    <div class="w-10/12 mt-20 h-max">
-      <h1 class="w-[27ch] text-gray-900 md:text-5xl sm:text-4xl text-xl font-bold leading-[200%]">Building <span class="font-[kind-regards] text-yellow-500 inline-block leading-[200%]">Digital Experiences</span>, One Line of Code at a Time</h1>
+  <div class="banner p-6 relative w-full h-screen top-0 flex md:items-center">
+    <div class="w-full mt-20 h-max flex flex-col-reverse md:flex-row lg:grid-cols-2 items-center justify-between">
+      <div class="mt-10 text-center md:text-left">
+        <h1 class="text-2xl mb-2 lg:text-5xl">I'm Mark Benson</h1>
+        <h2 class="w-[27ch] text-gray-900 lg:text-3xl sm:text-2xl text-md font-bold leading-[150%] p-0 m-0">Building <span class="text-yellow-500 inline-block leading-[150%]">Digital Experiences</span>, <br>One Line of Code at a Time</h2>
+      </div>
+      <div class="profile h-[300px] sm:h-[300px] lg:h-[500px] w-full">
+
+      </div>
     </div>
   </div>
 
-  <div class="h-max p-6 w-full bg-white flex justify-between flex-col sm:flex-row">
+  <div class="featured-section h-max p-6 w-full bg-white flex justify-between flex-col sm:flex-row">
     <div class="sm:w-[70%] w-full">
       <h1 class="text-2xl font-bold">Featured</h1>
       <div class="my-carousel swiper-container mt-2 overflow-hidden lg:hidden relative">
@@ -148,6 +154,7 @@
       menuExpand.style.display = 'none';
       menuButton.classList.toggle('active');
     });
+
   </script>
 </body>
 </html>
