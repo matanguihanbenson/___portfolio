@@ -594,6 +594,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -661,6 +665,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[28ch\] {
+  width: 28ch;
 }
 
 .cursor-pointer {
@@ -814,6 +822,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .leading-6 {
