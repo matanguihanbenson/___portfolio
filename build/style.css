@@ -639,6 +639,14 @@ video {
   height: 100vh;
 }
 
+.h-\[100dvh\] {
+  height: 100dvh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -683,8 +691,32 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-20 {
   gap: 5rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-36 {
+  gap: 9rem;
+}
+
+.gap-28 {
+  gap: 7rem;
 }
 
 .overflow-hidden {
