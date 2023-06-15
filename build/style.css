@@ -691,6 +691,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -997,6 +1001,34 @@ nav a:focus {
 
 .nav-expanded a:hover::after {
   content: " ]";
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-tagline .w-full {
+  animation: slideLeft 1s forwards;
+}
+
+.animate-tagline h1 {
+  animation: fadeIn 1s forwards;
 }
 
 .hover\:scale-110:hover {

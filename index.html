@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://kit.fontawesome.com/3118edf327.js" crossorigin="anonymous"></script>
 </head>
-<body class="font-serif">
+<body class="font-serif overflow-x-hidden">
   <div class="nav fixed top-0 z-10 bg-transparent flex justify-between w-full px-6 py-10 md:py-12 h-14 items-center">
     <h1 class="logo text-2xl leading-6 text-gray-900 md:text-4xl">Mark.Up</h1>
     <div class="rounded-full h-10 w-10 md:hidden bg-white transition-all duration-300 hover:scale-110 cursor-pointer shadow-lg flex justify-center items-center" id="menuButton">
@@ -49,21 +49,21 @@
       </div>
     </div>
 
-    <div class="bg-yellow-500 h-[400px] w-full p-6 sm:flex items-center mt-4">
+    <section class="tagline bg-yellow-500 h-[400px] w-full p-6 sm:flex items-center mt-4">
       <div class="w-full h-full flex flex-col-reverse md:flex-row">
         <div class="w-full flex justify-center items-center mt-8 md:mt-0">
-          <h1 class="font-black text-gray-900 md:text-6xl md:block lg:text-7xl hidden">crafting <br>beautiful <br> websites</h1>
-          <h1 class="font-black text-gray-900 md:hidden sm:text-3xl text-2xl text-center">crafting beautiful websites</h1>
+          <h1 class="font-black text-gray-900 md:text-6xl md:block lg:text-7xl hidden" style="animation: fadeIn 1s forwards;">crafting <br>beautiful <br> websites</h1>
+          <h1 class="font-black text-gray-900 md:hidden sm:text-3xl text-2xl text-center" style="animation: fadeIn 1s forwards;">crafting beautiful websites</h1>
         </div>
-        <div class="h-full w-[100%]" style="background:url(assets/img/undraw_design_sprint_re_tke3.svg);background-size: contain;background-repeat: no-repeat;background-position: center center;">
+        
+        <div class="h-full w-[100%] img" style="background:url(assets/img/undraw_design_sprint_re_tke3.svg);background-size: contain;background-repeat: no-repeat;background-position: center center;animation: slideLeft 1s forwards;"></div>
 
-        </div>
       </div>
       <div>
       </div>
-    </div>
+    </section>
 
-    <div class="featured-section relative h-max p-6 w-full bg-white flex justify-between flex-col sm:flex-row">
+    <section class="featured-section relative h-max p-6 w-full bg-white flex justify-between flex-col sm:flex-row">
       <div class="sm:w-[70%] w-full">
         <h1 class="text-2xl font-bold">Featured</h1>
         <div class="my-carousel swiper-container mt-2 overflow-hidden lg:hidden relative">
@@ -122,7 +122,7 @@
     
         </div>
       </div>
-    </div>
+    </section>
     
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -135,6 +135,20 @@
         clickable: true,
       },
     });
+  </script>
+  <script>
+    window.addEventListener('scroll', function() {
+  var taglineSection = document.querySelector('.tagline');
+  var taglinePosition = taglineSection.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (taglinePosition < windowHeight) {
+    taglineSection.classList.add('animate-tagline');
+  } else {
+    taglineSection.classList.remove('animate-tagline');
+  }
+});
+
   </script>
 
   <script>
