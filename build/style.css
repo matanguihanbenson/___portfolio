@@ -1044,6 +1044,18 @@ nav a:focus {
   animation: fadeIn 1s forwards;
 }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideRight {
   0% {
     opacity: 0;
@@ -1073,6 +1085,26 @@ nav a:focus {
 .featured-lg.animate-slide .swiper-slide:nth-child(1) {
   animation: slideRight .6s forwards;
   animation-delay: 0.6s;
+}
+
+.featured-sm{
+  opacity: 0;
+}
+
+.featured-sm.animate-slide {
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.3s;
+  /* Adjust as needed */
+}
+
+.ongoing{
+  opacity: 0;
+}
+
+.ongoing.animate-slide {
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.9s;
+  /* Adjust as needed */
 }
 
 .hover\:scale-110:hover {
