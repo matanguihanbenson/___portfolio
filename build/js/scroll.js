@@ -34,16 +34,16 @@ window.addEventListener('scroll', function () {
 var menuButton = document.getElementById('menuButton');
 var closeButton = document.getElementById('closeButton');
 var menuExpand = document.querySelector('.nav-expanded');
-var barsIcon = document.querySelector('#menuButton .fa-bars');
-var xmarkIcon = document.querySelector('#menuButton .fa-times');
 
 menuButton.addEventListener('click', function () {
-    menuExpand.style.display = 'block';
+    menuExpand.classList.add("animate-open");
+    menuExpand.classList.remove("animate-close");
     menuButton.classList.toggle('active');
 });
 
 closeButton.addEventListener('click', function () {
-    menuExpand.style.display = 'none';
+    menuExpand.classList.add("animate-close");
+    menuExpand.classList.remove("animate-open");
     menuButton.classList.toggle('active');
 });
 

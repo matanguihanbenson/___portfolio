@@ -941,9 +941,6 @@ nav a:focus {
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
-.banner {
-}
-
 .bg-transparent {
   transition: background-color 0.3s ease-in-out;
 }
@@ -986,6 +983,42 @@ nav a:focus {
   display: none;
   z-index: 99;
   overflow: hidden !important;
+}
+
+.nav-expanded.animate-open{
+  display: block;
+  animation: entrance .3s forwards;
+}
+
+.nav-expanded.animate-open #closeButton{
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: .3s;
+}
+
+@keyframes entrance {
+  from{
+    transform: translateX(100%);
+  }
+
+  to{
+    transform: translateX(0%);
+  }
+}
+
+.nav-expanded.animate-close{
+  display: block;
+  animation: close .3s forwards;
+}
+
+@keyframes close {
+  from{
+    transform: translateX(0%);
+  }
+
+  to{
+    transform: translateX(100%);
+  }
 }
 
 #menuButton .fa-bars {
@@ -1094,7 +1127,6 @@ nav a:focus {
 .featured-sm.animate-slide {
   animation: fadeIn 1s forwards;
   animation-delay: 0.3s;
-  /* Adjust as needed */
 }
 
 .ongoing{
@@ -1104,7 +1136,6 @@ nav a:focus {
 .ongoing.animate-slide {
   animation: fadeIn 1s forwards;
   animation-delay: 0.9s;
-  /* Adjust as needed */
 }
 
 .hover\:scale-110:hover {
@@ -1236,3 +1267,4 @@ nav a:focus {
     line-height: 1;
   }
 }
+
