@@ -586,16 +586,8 @@ video {
   margin-top: 2rem;
 }
 
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -616,6 +608,10 @@ video {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .h-\[200px\] {
@@ -643,14 +639,6 @@ video {
   height: 100vh;
 }
 
-.h-\[100dvh\] {
-  height: 100dvh;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -659,16 +647,12 @@ video {
   width: 100%;
 }
 
-.w-\[27ch\] {
-  width: 27ch;
+.w-\[28ch\] {
+  width: 28ch;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[28ch\] {
-  width: 28ch;
 }
 
 .cursor-pointer {
@@ -703,30 +687,6 @@ video {
   justify-content: space-around;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-24 {
-  gap: 6rem;
-}
-
-.gap-32 {
-  gap: 8rem;
-}
-
-.gap-36 {
-  gap: 9rem;
-}
-
-.gap-28 {
-  gap: 7rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -737,10 +697,6 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.\!overflow-x-hidden {
-  overflow-x: hidden !important;
 }
 
 .rounded-full {
@@ -759,6 +715,11 @@ video {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1083,6 +1044,37 @@ nav a:focus {
   animation: fadeIn 1s forwards;
 }
 
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.featured-lg .swiper-slide{
+  opacity: 0;
+}
+
+.featured-lg.animate-slide .swiper-slide:nth-child(3) {
+  animation: slideRight .6s forwards;
+  animation-delay: 0.2s;
+}
+
+.featured-lg.animate-slide .swiper-slide:nth-child(2) {
+  animation: slideRight .6s forwards;
+  animation-delay: 0.4s;
+}
+
+.featured-lg.animate-slide .swiper-slide:nth-child(1) {
+  animation: slideRight .6s forwards;
+  animation-delay: 0.6s;
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1144,10 +1136,6 @@ nav a:focus {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:gap-4 {
@@ -1214,11 +1202,5 @@ nav a:focus {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-}
-
-@media (orientation: portrait) {
-  .portrait\:h-\[500px\] {
-    height: 500px;
   }
 }
