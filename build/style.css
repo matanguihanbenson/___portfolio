@@ -655,6 +655,10 @@ video {
   width: 100%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -869,13 +873,13 @@ h1.logo {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-mask:url(../assets/img/colorful-paint-splash-free-png.png);
-          mask:url(../assets/img/colorful-paint-splash-free-png.png);
+  mask:url(../assets/img/colorful-paint-splash-free-png.png);
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-size: contain;
   -webkit-mask-position: center center;
-          mask-position: center center;
+  mask-position: center center;
   filter: grayscale(200%);
   animation: welcome;
   animation-duration: 1s;
