@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./build/style.css --watch",
-    "build": "postcss ./src/input.css -o ./build/style.css"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./build/style.css --watch"
   },
   "author": "Mark Benson Matanguihan",
   "license": "ISC",
